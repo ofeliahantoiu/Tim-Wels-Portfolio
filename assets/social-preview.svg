@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#172735"/>
+  <path d="M0 524H1200M0 419H1200M0 314H1200M0 209H1200M120 0V630M330 0V630M540 0V630M750 0V630M960 0V630" stroke="#385364" opacity=".4"/>
+  <circle cx="1050" cy="125" r="230" fill="none" stroke="#f0ad83" opacity=".4"/>
+  <circle cx="1050" cy="125" r="300" fill="none" stroke="#f0ad83" opacity=".25"/>
+  <text x="90" y="154" fill="#f0ad83" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="bold" letter-spacing="8">ENGINEERING PORTFOLIO</text>
+  <text x="80" y="330" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="122" font-weight="bold" letter-spacing="-7">TIM WELS</text>
+  <text x="90" y="421" fill="#f0ad83" font-family="Georgia,serif" font-size="54" font-style="italic">Ik maak ideeën werkbaar.</text>
+  <rect x="90" y="475" width="255" height="5" fill="#f0ad83"/>
+</svg>

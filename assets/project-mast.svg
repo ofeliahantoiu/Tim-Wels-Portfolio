@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="460" viewBox="0 0 800 460">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#183b3b"/><stop offset="1" stop-color="#102b35"/></linearGradient>
+    <linearGradient id="mast" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#7598a2"/><stop offset=".5" stop-color="#c6d4d2"/><stop offset="1" stop-color="#607a86"/></linearGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#85aaab" stroke-width=".6" opacity=".16"/></pattern>
+  </defs>
+  <rect width="800" height="460" fill="url(#bg)"/><rect width="800" height="460" fill="url(#grid)"/>
+  <g stroke="#587780" stroke-width="10" opacity=".8">
+    <path d="M150 137V370M255 137V370M569 120V370M670 120V370"/>
+    <path d="M130 166H282M130 237H282M130 308H282M540 154H700M540 225H700M540 296H700"/>
+  </g>
+  <g fill="#c3916f" opacity=".72"><rect x="162" y="133" width="39" height="27"/><rect x="207" y="133" width="37" height="27"/><rect x="157" y="205" width="76" height="26"/><rect x="586" y="122" width="71" height="26"/><rect x="582" y="193" width="29" height="27"/><rect x="619" y="193" width="35" height="27"/><rect x="580" y="266" width="72" height="25"/></g>
+  <g stroke="#a5c2c4" stroke-width="5"><path d="M338 73V390M443 73V390"/></g>
+  <path d="M350 67H428V395H350Z" fill="none" stroke="url(#mast)" stroke-width="17"/>
+  <path d="M353 85L428 130L353 175L428 220L353 265L428 310L353 355" fill="none" stroke="#72959e" stroke-width="7"/>
+  <path d="M364 243H424V295H364Z" fill="#e2b489" stroke="#d9d6ce" stroke-width="6"/>
+  <path d="M335 270H465L496 289H319Z" fill="#c0d0d3" stroke="#6c8792" stroke-width="3"/>
+  <path d="M336 300H463L463 312H336Z" fill="#5a7885"/>
+  <path d="M389 59V30" stroke="#c1d4d6" stroke-width="5"/><rect x="377" y="33" width="24" height="24" rx="4" fill="#e4b188"/>
+  <path d="M287 396H510M389 407V426" stroke="#7fa4aa" stroke-width="2" stroke-dasharray="5 7"/>
+  <text x="55" y="70" font-family="Arial,sans-serif" font-size="13" font-weight="bold" letter-spacing="3" fill="#dcebea">ORDERPICKSYSTEEM</text>
+  <text x="55" y="97" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" fill="#9fbabc">MASTCONSTRUCTIE</text>
+  <text x="565" y="424" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" fill="#a9c2c4">CONCEPTWEERGAVE</text>
+</svg>

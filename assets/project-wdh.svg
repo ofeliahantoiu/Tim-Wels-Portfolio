@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="460" viewBox="0 0 800 460">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a4454"/><stop offset="1" stop-color="#102937"/></linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#bdd0d3"/><stop offset=".47" stop-color="#718f9c"/><stop offset="1" stop-color="#355364"/></linearGradient>
+    <linearGradient id="pipe" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a8c5cd"/><stop offset=".4" stop-color="#6d8e9b"/><stop offset="1" stop-color="#284f64"/></linearGradient>
+    <pattern id="grid" width="33" height="33" patternUnits="userSpaceOnUse"><path d="M33 0H0V33" fill="none" stroke="#a9c2ce" stroke-width=".7" opacity=".23"/></pattern>
+    <filter id="shadow"><feGaussianBlur stdDeviation="11"/></filter>
+  </defs>
+  <rect width="800" height="460" fill="url(#bg)"/>
+  <rect width="800" height="460" fill="url(#grid)" opacity=".65"/>
+  <ellipse cx="416" cy="385" rx="275" ry="34" fill="#06141a" opacity=".48" filter="url(#shadow)"/>
+  <path d="M146 340L526 264L652 336L268 415Z" fill="#3b6070" opacity=".28"/>
+  <g stroke="#90b0b9" stroke-linejoin="round">
+    <path d="M197 299L570 235L660 292L280 370Z" fill="#5c8190" stroke-width="5"/>
+    <path d="M197 299L197 319L280 395L280 370Z" fill="#294a5c" stroke-width="4"/>
+    <path d="M280 370L660 292L660 313L280 395Z" fill="#365b6b" stroke-width="4"/>
+    <path d="M197 299L570 235L570 258L197 319Z" fill="#7697a1" stroke-width="4"/>
+    <path d="M244 345V407M602 315V376M228 333V395M633 297V355" stroke="#9fb6bd" stroke-width="14" stroke-linecap="round"/>
+    <path d="M244 407L256 413M602 376L614 381M228 395L240 400M633 355L648 361" stroke="#e4bbb0" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g fill="url(#metal)" stroke="#122c3a" stroke-width="5">
+    <path d="M290 308L290 263L350 246L350 299Z"/>
+    <path d="M493 270L493 224L555 207L555 259Z"/>
+  </g>
+  <g stroke="#143747" stroke-width="15" stroke-linecap="round">
+    <path d="M294 264L327 247M324 247L353 261M497 224L527 207M527 207L558 221"/>
+  </g>
+  <g stroke="url(#pipe)" stroke-width="79" stroke-linecap="round"><path d="M192 196L572 130"/></g>
+  <g stroke="#c6d5da" stroke-width="2" opacity=".45"><path d="M190 166L572 100"/><path d="M190 231L575 164"/></g>
+  <ellipse cx="194" cy="196" rx="23" ry="38" transform="rotate(-10 194 196)" fill="#244859" stroke="#b9cbd1" stroke-width="6"/>
+  <ellipse cx="194" cy="196" rx="12" ry="23" transform="rotate(-10 194 196)" fill="#577889"/>
+  <path d="M157 80L157 111L205 111M612 194L665 194L665 245" fill="none" stroke="#9dbbc5" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <text x="58" y="69" font-family="Arial,sans-serif" font-size="13" font-weight="bold" letter-spacing="3" fill="#cce0e4">MODULAIRE ROLBOK</text>
+  <text x="58" y="94" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" fill="#9fbcc6">LASSERIJ / ONDERSTEUNING</text>
+  <circle cx="665" cy="245" r="4" fill="#f2b78e"/>
+  <text x="560" y="422" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" fill="#b2c6ca">CONCEPTWEERGAVE</text>
+</svg>
