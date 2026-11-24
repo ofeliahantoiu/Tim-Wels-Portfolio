@@ -8,6 +8,8 @@ Een complete, responsive portfolio-website gebaseerd op het CV van Tim Wels (okt
 - Projecten: WDH Cylinders, Seratech (zaagmachine en orderpicksysteem), Engels Logistiek
 - Over mij, opleidingen, stages en werkervaring
 - Contactknop (opent e-mailprogramma) en knop om het e-mailadres te kopiëren
+- **Bekijk mijn cv**: opent het CV in een venster op de website; bezoekers kunnen het ook openen of downloaden als PDF
+- **Licht/donker-schakelaar**: volgt bij het eerste bezoek de systeeminstelling en bewaart daarna de gekozen modus in de browser
 - Mobiele navigatie, subtiele scroll-animaties en toegankelijkheid voor toetsenbordgebruikers
 - Schematische SVG-illustraties bij de projecten (geen echte projectfoto's)
 
@@ -18,6 +20,7 @@ index.html                  Website en inhoud
 css/styles.css              Opmaak en responsive gedrag
 js/main.js                  Mobiel menu, animaties en e-mail kopiëren
 assets/portrait-000.png     Portret uit het aangeleverde CV
+assets/CV_Tim_Wels_public.pdf  Openbare CV-versie zonder privé-adres, geboortedatum of telefoonnummer
 assets/project-wdh.svg      Schematische projectillustratie
 assets/project-saw.svg      Schematische projectillustratie
 assets/project-mast.svg     Schematische projectillustratie
@@ -88,6 +91,7 @@ Open de bestanden in bijvoorbeeld [Visual Studio Code](https://code.visualstudio
 | E-mailadres | In `index.html`, `js/main.js` én de `application/ld+json` gegevens in `index.html` |
 | Kleuren | Variabelen bovenaan `css/styles.css` |
 | Portret | Vervang `assets/portrait-000.png` en pas eventueel de verwijzing in `index.html` aan |
+| PDF van je CV | Vervang `assets/CV_Tim_Wels_public.pdf` door een aangepaste openbare PDF-versie met dezelfde bestandsnaam |
 | Projectafbeeldingen | Vervang `assets/project-*.svg` door jouw echte foto's en wijzig de `src`-verwijzingen |
 
 ### Echte projectfoto's toevoegen
@@ -103,7 +107,7 @@ De huidige afbeeldingen zijn bewust **schematische illustraties**; ze tonen niet
 
 ## Privacy
 
-De site gebruikt je naam, ervaring, studie, projecten en het e-mailadres uit het aangeleverde CV. **Geboortedatum, volledig huisadres en telefoonnummer staan bewust niet op de publieke website.** Je originele CV is niet opgenomen in de ZIP, omdat daarin deze privégegevens staan. Wil je later een downloadknop voor je CV, maak dan eerst een openbare versie zonder gevoelige persoonsgegevens.
+De site gebruikt je naam, ervaring, studie, projecten en het e-mailadres uit het aangeleverde CV. **Geboortedatum, volledig huisadres en telefoonnummer zijn bewust verwijderd uit de openbare PDF en staan niet op de website.** Het oorspronkelijke CV met die privégegevens is niet opgenomen in de ZIP. De nieuwe PDF behoudt de rest van de oorspronkelijke vormgeving. Wil je het telefoonnummer toch publiceren, vervang dan zelf deze PDF door een geschikte versie.
 
 ## Technische details
 

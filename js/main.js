@@ -1,5 +1,53 @@
 "use strict";
 
+const themeButton = document.querySelector("[data-theme-toggle]");
+const themeLabel = document.querySelector("[data-theme-label]");
+const themeMeta = document.querySelector('meta[name="theme-color"]');
+const themeStorageKey = "tim-wels-theme";
+
+function applyTheme(theme) {
+  const isDark = theme === "dark";
+  document.documentElement.dataset.theme = isDark ? "dark" : "light";
+  if (themeLabel) themeLabel.textContent = isDark ? "Licht" : "Donker";
+  if (themeButton) {
+    themeButton.setAttribute("aria-pressed", String(isDark));
+    themeButton.setAttribute("aria-label", isDark ? "Schakel naar lichte modus" : "Schakel naar donkere modus");
+  }
+  if (themeMeta) themeMeta.setAttribute("content", isDark ? "#0f1b25" : "#f6f5f0");
+}
+
+applyTheme(document.documentElement.dataset.theme);
+if (themeButton) {
+  themeButton.addEventListener("click", () => {
+    const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    applyTheme(nextTheme);
+    try { localStorage.setItem(themeStorageKey, nextTheme); } catch { /* Storage may be unavailable. */ }
+  });
+}
+
+const cvDialog = document.querySelector("#cv-dialog");
+const cvFrame = document.querySelector(".cv-frame");
+const cvCloseButton = document.querySelector("[data-close-cv]");
+
+if (cvDialog && typeof cvDialog.showModal === "function") {
+  document.querySelectorAll("[data-open-cv]").forEach((trigger) => {
+    trigger.addEventListener("click", (event) => {
+      event.preventDefault();
+      if (!cvDialog.open) {
+        if (cvFrame) cvFrame.src = cvFrame.dataset.src;
+        cvDialog.showModal();
+      }
+    });
+  });
+  if (cvCloseButton) cvCloseButton.addEventListener("click", () => cvDialog.close());
+  cvDialog.addEventListener("click", (event) => {
+    if (event.target === cvDialog) cvDialog.close();
+  });
+  cvDialog.addEventListener("close", () => {
+    if (cvFrame) cvFrame.removeAttribute("src");
+  });
+}
+
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector("#primary-nav");
 
@@ -29,7 +77,7 @@ if (menuButton && navigation) {
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 700) closeMenu();
+    if (window.innerWidth > 800) closeMenu();
   });
 }
 
